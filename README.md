@@ -324,3 +324,15 @@ Certificate
    Certificate Request Fingerprint SHA1: 31DC7289 631C069D B24FACDB 364D6127 05473DAE
    Associated Trustpoint: VPN1
 ```
+
+Проверим связность:
+
+Запустим пинг с VPC7 из Москвы до VPC30 Чокурдах:
+```
+VPCS> ping 201.193.45.2
+
+84 bytes from 201.193.45.2 icmp_seq=1 ttl=57 time=3.274 ms
+84 bytes from 201.193.45.2 icmp_seq=2 ttl=57 time=4.757 ms
+84 bytes from 201.193.45.2 icmp_seq=3 ttl=57 time=3.231 ms
+84 bytes from 201.193.45.2 icmp_seq=4 ttl=57 time=2.570 ms
+```
